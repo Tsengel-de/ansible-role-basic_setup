@@ -1,0 +1,544 @@
+WARNING: PATH altered to include /home/bachka/repos-privat/pi-cluster/.venv/bin, /home/bachka/repos-privat/pi-cluster/.venv/bin :: This is usually a sign of broken local setup, which can cause unexpected behaviors.
+[2mDEBUG    Logging initialized to level 10[0m
+[2mINFO     Identified [35m/home/bachka/repos-privat/ansible-roles-export/basic_setup[0m as project root due [1m.git directory[0m.[0m
+[2mDEBUG    Options: Options(_skip_ansible_syntax_check=False, cache_dir=PosixPath('/home/bachka/repos-privat/ansible-roles-export/basic_setup/.ansible'), colored=True, configured=True, cwd=PosixPath('/home/bachka/repos-privat/ansible-roles-export/basic_setup'), display_relative_path=True, exclude_paths=['.cache', '.git', '.hg', '.svn', '.tox'], format=None, lintables=['.'], list_rules=False, list_tags=False, write_list=[], write_exclude_list=[], parseable=False, quiet=False, rulesdirs=[PosixPath('/home/bachka/repos-privat/pi-cluster/.venv/lib/python3.13/site-packages/ansiblelint/rules')], skip_list=['role-name', 'yaml[indentation]', 'yaml[trailing-spaces]', 'yaml[line-length]', 'no-changed-when', 'risky-shell-pipe', 'risky-file-permissions', 'internal-error', 'meta-no-info', 'name[play]', 'name[role]', 'name[task]', 'yaml[indentation]', 'yaml[trailing-spaces]', 'yaml[line-length]', 'no-changed-when', 'meta-video', 'var-naming[no-role-prefix]'], tags=[], verbosity=2, warn_list=['experimental', 'jinja[spacing]', 'fqcn[deep]'], mock_filters=[], mock_modules=[], mock_roles=[], loop_var_prefix=None, only_builtins_allow_collections=[], only_builtins_allow_modules=[], var_naming_pattern=None, offline=False, project_dir='.', extra_vars=None, enable_list=[], skip_action_validation=True, strict=False, rules={}, profile=None, task_name_prefix='{stem} | ', sarif_file=None, config_file='/home/bachka/repos-privat/ansible-roles-export/basic_setup/.ansible-lint', generate_ignore=False, rulesdir=[], use_default_rules=False, version=False, list_profiles=False, ignore_file=None, yamllint_file=None, max_tasks=100, max_block_depth=20, supported_ansible_also=[])[/][0m
+[2mDEBUG    CWD: /home/bachka/repos-privat/ansible-roles-export/basic_setup[0m
+[2mDEBUG    Logging initialized to level 10[0m
+[2mINFO     Collection paths was patched to include extra directories /home/bachka/.ansible/collections,/usr/share/ansible/collections,/home/bachka/repos-privat/pi-cluster/.venv/lib/python3.13/dist-packages,/home/bachka/repos-privat/pi-cluster/.venv/lib/python3/dist-packages,/home/bachka/repos-privat/pi-cluster/.venv/local/lib/python3.13/dist-packages,/home/bachka/repos-privat/pi-cluster/.venv/lib/python3.13/site-packages[0m
+[2mDEBUG    Effective yamllint rules used: {'anchors': {'level': 'error', 'forbid-undeclared-aliases': True, 'forbid-duplicated-anchors': False, 'forbid-unused-anchors': False}, 'braces': {'level': 'error', 'forbid': False, 'min-spaces-inside': 0, 'max-spaces-inside': 1, 'min-spaces-inside-empty': -1, 'max-spaces-inside-empty': -1}, 'brackets': {'level': 'error', 'forbid': False, 'min-spaces-inside': 0, 'max-spaces-inside': 0, 'min-spaces-inside-empty': -1, 'max-spaces-inside-empty': -1}, 'colons': {'level': 'error', 'max-spaces-before': 0, 'max-spaces-after': 1}, 'commas': {'level': 'error', 'max-spaces-before': 0, 'min-spaces-after': 1, 'max-spaces-after': 1}, 'comments': {'level': 'warning', 'require-starting-space': True, 'ignore-shebangs': True, 'min-spaces-from-content': 1}, 'comments-indentation': False, 'document-end': False, 'document-start': False, 'empty-lines': {'level': 'error', 'max': 2, 'max-start': 0, 'max-end': 0}, 'empty-values': False, 'float-values': False, 'hyphens': {'level': 'error', 'max-spaces-after': 1}, 'indentation': {'level': 'error', 'spaces': 'consistent', 'indent-sequences': True, 'check-multi-line-strings': False}, 'key-duplicates': {'level': 'error', 'forbid-duplicated-merge-keys': False}, 'key-ordering': False, 'line-length': {'level': 'error', 'max': 160, 'allow-non-breakable-words': True, 'allow-non-breakable-inline-mappings': False}, 'new-line-at-end-of-file': {'level': 'error'}, 'new-lines': {'level': 'error', 'type': 'unix'}, 'octal-values': {'forbid-implicit-octal': True, 'forbid-explicit-octal': True, 'level': 'error'}, 'quoted-strings': False, 'trailing-spaces': {'level': 'error'}, 'truthy': {'level': 'warning', 'allowed-values': ['true', 'false'], 'check-keys': True}}[0m
+[2mINFO     Set ANSIBLE_LIBRARY=/home/bachka/repos-privat/ansible-roles-export/basic_setup/.ansible/modules:/home/bachka/.ansible/plugins/modules:/usr/share/ansible/plugins/modules[0m
+[2mINFO     Set ANSIBLE_COLLECTIONS_PATH=/home/bachka/repos-privat/ansible-roles-export/basic_setup/.ansible/collections:/home/bachka/.ansible/collections:/usr/share/ansible/collections:/home/bachka/repos-privat/pi-cluster/.venv/lib/python3.13/dist-packages:/home/bachka/repos-privat/pi-cluster/.venv/lib/python3/dist-packages:/home/bachka/repos-privat/pi-cluster/.venv/local/lib/python3.13/dist-packages:/home/bachka/repos-privat/pi-cluster/.venv/lib/python3.13/site-packages[0m
+[2mINFO     Set ANSIBLE_ROLES_PATH=/home/bachka/repos-privat/ansible-roles-export/basic_setup/.ansible/roles:/home/bachka/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles[0m
+[2mINFO     Using /home/bachka/repos-privat/ansible-roles-export/basic_setup/.ansible/roles/basic_setup symlink to current repository in order to enable Ansible to find the role using its expected full name.[0m
+[2mDEBUG    Effective yamllint rules used: {'anchors': {'level': 'error', 'forbid-undeclared-aliases': True, 'forbid-duplicated-anchors': False, 'forbid-unused-anchors': False}, 'braces': {'level': 'error', 'forbid': False, 'min-spaces-inside': 0, 'max-spaces-inside': 1, 'min-spaces-inside-empty': -1, 'max-spaces-inside-empty': -1}, 'brackets': {'level': 'error', 'forbid': False, 'min-spaces-inside': 0, 'max-spaces-inside': 0, 'min-spaces-inside-empty': -1, 'max-spaces-inside-empty': -1}, 'colons': {'level': 'error', 'max-spaces-before': 0, 'max-spaces-after': 1}, 'commas': {'level': 'error', 'max-spaces-before': 0, 'min-spaces-after': 1, 'max-spaces-after': 1}, 'comments': {'level': 'warning', 'require-starting-space': True, 'ignore-shebangs': True, 'min-spaces-from-content': 1}, 'comments-indentation': False, 'document-end': False, 'document-start': False, 'empty-lines': {'level': 'error', 'max': 2, 'max-start': 0, 'max-end': 0}, 'empty-values': False, 'float-values': False, 'hyphens': {'level': 'error', 'max-spaces-after': 1}, 'indentation': {'level': 'error', 'spaces': 'consistent', 'indent-sequences': True, 'check-multi-line-strings': False}, 'key-duplicates': {'level': 'error', 'forbid-duplicated-merge-keys': False}, 'key-ordering': False, 'line-length': {'level': 'error', 'max': 160, 'allow-non-breakable-words': True, 'allow-non-breakable-inline-mappings': False}, 'new-line-at-end-of-file': {'level': 'error'}, 'new-lines': {'level': 'error', 'type': 'unix'}, 'octal-values': {'forbid-implicit-octal': True, 'forbid-explicit-octal': True, 'level': 'error'}, 'quoted-strings': False, 'trailing-spaces': {'level': 'error'}, 'truthy': {'level': 'warning', 'allowed-values': ['true', 'false'], 'check-keys': True}}[0m
+[2mDEBUG    Excluded: .ansible[0m
+[2mDEBUG    Excluded: .git[0m
+[2mINFO     Executing syntax check on role . (0.23s)[0m
+[2mDEBUG    Examining handlers/main.yml of type handlers[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mDEBUG    Examining .ansible-lint of type ansible-lint-config[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mDEBUG    Examining tasks/load_kernel_modules.yml of type tasks[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[WARNING]: Error loading plugin 'community.general.modprobe': No module named 'ansible_collections.community'
+[2mWARNING  Unable to load module community.general.modprobe at tasks/load_kernel_modules.yml:5 for options validation[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mWARNING  Invalid value (None)for resolved_fqcn attribute of community.general.modprobe module.[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mDEBUG    Examining tasks/raspberrypi_tasks.yml of type tasks[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mDEBUG    Examining tasks/multipath_blacklist.yml of type tasks[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mDEBUG    Examining tasks/remove_snap_packages.yml of type tasks[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mDEBUG    Examining defaults/main.yaml of type vars[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mDEBUG    Examining tasks/main.yaml of type tasks[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mDEBUG    Examining . of type role[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mDEBUG    Examining tasks/remove_snap.yaml of type tasks[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mDEBUG    Examining meta/main.yml of type meta[0m
+[2mDEBUG    Running rule internal-error[0m
+[2mDEBUG    Running rule load-failure[0m
+[2mDEBUG    Running rule parser-error[0m
+[2mDEBUG    Running rule warning[0m
+[2mDEBUG    Running rule yaml[0m
+[2mDEBUG    Running rule args[0m
+[2mDEBUG    Running rule avoid-implicit[0m
+[2mDEBUG    Running rule command-instead-of-module[0m
+[2mDEBUG    Running rule command-instead-of-shell[0m
+[2mDEBUG    Running rule complexity[0m
+[2mDEBUG    Running rule deprecated-bare-vars[0m
+[2mDEBUG    Running rule deprecated-local-action[0m
+[2mDEBUG    Running rule deprecated-module[0m
+[2mDEBUG    Running rule fqcn[0m
+[2mDEBUG    Running rule galaxy[0m
+[2mDEBUG    Running rule ignore-errors[0m
+[2mDEBUG    Running rule inline-env-var[0m
+[2mDEBUG    Running rule jinja[0m
+[2mDEBUG    Running rule key-order[0m
+[2mDEBUG    Running rule latest[0m
+[2mDEBUG    Running rule literal-compare[0m
+[2mDEBUG    Running rule loop-var-prefix[0m
+[2mDEBUG    Running rule meta-incorrect[0m
+[2mDEBUG    Running rule meta-no-tags[0m
+[2mDEBUG    Running rule meta-runtime[0m
+[2mDEBUG    Running rule meta-video-links[0m
+[2mDEBUG    Running rule name[0m
+[2mDEBUG    Running rule no-changed-when[0m
+[2mDEBUG    Running rule no-free-form[0m
+[2mDEBUG    Running rule no-handler[0m
+[2mDEBUG    Running rule no-jinja-when[0m
+[2mDEBUG    Running rule no-relative-paths[0m
+[2mDEBUG    Running rule no-tabs[0m
+[2mDEBUG    Running rule package-latest[0m
+[2mDEBUG    Running rule partial-become[0m
+[2mDEBUG    Running rule playbook-extension[0m
+[2mDEBUG    Running rule risky-file-permissions[0m
+[2mDEBUG    Running rule risky-octal[0m
+[2mDEBUG    Running rule risky-shell-pipe[0m
+[2mDEBUG    Running rule role-name[0m
+[2mDEBUG    Running rule run-once[0m
+[2mDEBUG    Running rule sanity[0m
+[2mDEBUG    Running rule schema[0m
+[2mDEBUG    Running rule var-naming[0m
+[2mWARNING  Listing 1 violation(s) that are fatal[0m
+[2mDEBUG    Attempting to release lock 132623737396864 on /home/bachka/repos-privat/ansible-roles-export/basic_setup/.ansible/.lock[0m
+[2mDEBUG    Lock 132623737396864 released on /home/bachka/repos-privat/ansible-roles-export/basic_setup/.ansible/.lock[0m
+Read [34m]8;;https://docs.ansible.com/projects/lint/configuring/#ignoring-rules-for-entire-files\documentation]8;;\[0m for instructions on how to ignore specific rule violations.
+
+[2mDEBUG    Determined rule-profile order: {'internal-error': (0, 'min'), 'load-failure': (1, 'min'), 'parser-error': (2, 'min'), 'syntax-check': (3, 'min'), 'command-instead-of-module': (4, 'basic'), 'command-instead-of-shell': (5, 'basic'), 'deprecated-bare-vars': (6, 'basic'), 'deprecated-local-action': (7, 'basic'), 'deprecated-module': (8, 'basic'), 'inline-env-var': (9, 'basic'), 'key-order': (10, 'basic'), 'literal-compare': (11, 'basic'), 'jinja': (12, 'basic'), 'no-free-form': (13, 'basic'), 'no-jinja-when': (14, 'basic'), 'no-tabs': (15, 'basic'), 'partial-become': (16, 'basic'), 'playbook-extension': (17, 'basic'), 'role-name': (18, 'basic'), 'schema': (19, 'basic'), 'name': (20, 'basic'), 'var-naming': (21, 'basic'), 'yaml': (22, 'basic'), 'name[template]': (23, 'moderate'), 'name[imperative]': (24, 'moderate'), 'name[casing]': (25, 'moderate'), 'spell-var-name': (26, 'moderate'), 'avoid-implicit': (27, 'safety'), 'latest': (28, 'safety'), 'package-latest': (29, 'safety'), 'risky-file-permissions': (30, 'safety'), 'risky-octal': (31, 'safety'), 'risky-shell-pipe': (32, 'safety'), 'galaxy': (33, 'shared'), 'ignore-errors': (34, 'shared'), 'layout': (35, 'shared'), 'meta-incorrect': (36, 'shared'), 'meta-no-tags': (37, 'shared'), 'meta-video-links': (38, 'shared'), 'meta-version': (39, 'shared'), 'meta-runtime': (40, 'shared'), 'no-changed-when': (41, 'shared'), 'no-changelog': (42, 'shared'), 'no-handler': (43, 'shared'), 'no-relative-paths': (44, 'shared'), 'max-block-depth': (45, 'shared'), 'max-tasks': (46, 'shared'), 'unsafe-loop': (47, 'shared'), 'avoid-dot-notation': (48, 'production'), 'sanity': (49, 'production'), 'fqcn': (50, 'production'), 'import-task-no-when': (51, 'production'), 'meta-no-dependencies': (52, 'production'), 'single-entry-point': (53, 'production'), 'use-loop': (54, 'production')}[/][0m
+# Rule Violation Summary
+
+  1 [34m]8;;https://docs.ansible.com/projects/lint/rules/\schema]8;;\[0m [2mprofile:basic tags:core[0m
+
+[2mDEBUG    Found virtualenv, assuming `pip3 install` will work.[0m
+[2mDEBUG    Registered VCS backend: bzr[0m
+[2mDEBUG    Registered VCS backend: git[0m
+[2mDEBUG    Registered VCS backend: hg[0m
+[2mDEBUG    Registered VCS backend: svn[0m
+[2mDEBUG    Found ansible-lint 25.12.2 dist[0m
+[31m[1mFailed[0m[0m: 1 failure(s), 0 warning(s) in 11 files processed of 11 encountered. Last profile that met the validation criteria was 'min'.
+[31m[34m]8;;https://docs.ansible.com/projects/lint/rules/schema/\schema[meta]]8;;\[0m[2m:[0m [31m$.galaxy_info.namespace 'Tsengel-de' does not match '^[a-z][a-z0-9_-]+$'. See https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_reuse_roles.html#using-role-dependencies[0m
+[35mmeta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention
+the schema name being used as a tag, like ``schema[playbook]``,
+``schema[tasks]``.
+
+This rule is not skippable and stops further processing of the file.
+
+If incorrect schema was picked, you might want to either:
+
+* move the file to standard location, so its file is detected correctly.
+* use ``kinds:`` option in linter config to help it pick correct file type.
+[/]
+[0m[0m
