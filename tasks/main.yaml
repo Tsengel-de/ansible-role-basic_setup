@@ -1,5 +1,8 @@
 ---
 
+- name: Update OS and Reboot if needed
+  ansible.builtin.include_tasks: update_os.yml
+
 # Get list of packages installed
 - name: Get list of packages
   ansible.builtin.package_facts:
